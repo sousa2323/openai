@@ -67,4 +67,7 @@ def analisador_sentimento(produto):
         print(f"Erro de API: {e}")
 
 
-analisador_sentimento("Maquiagem mineral")
+lista_de_produtos = ["Camisetas de algodão orgânico",
+                     "Jeans feitos com materiais reciclados", "Maquiagem mineral"]
+for um_produto in lista_de_produtos:
+    analisador_sentimento(um_produto)
